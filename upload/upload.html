@@ -1,0 +1,37 @@
+<html>
+<head>	
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+	<div class="top">
+		<div class="bottom">
+			<div class="center">
+				<div class="hero">
+					<div class="card">
+			<h1>UPDATE</h1>
+			<p> YOUR PHOTOS</p>
+			<img src="images/profile.jpg" id="profile-pic">
+			<label for="input-file">Update Image</label>
+			<input type="file" accept="images/jpeg, images/png, images/jpg, image/JPG" id="input-file">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+
+	let profilePic=document.getElementById("profile-pic");
+	let inputFile=document.getElementById("input-file");
+
+	inputFile.onchange=function(){
+		profilePic.src=URL.createObjectURL(inputFile.files[0]);
+	}
+
+	</script>
+</body>
+</html>
