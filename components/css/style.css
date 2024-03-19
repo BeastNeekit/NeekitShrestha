@@ -7,7 +7,7 @@
     object-fit: cover;
     z-index: 0;
 }
-#viewsCount {
+.viewsCount {
     position: absolute;
     bottom: 20px;
     right: 20px;
