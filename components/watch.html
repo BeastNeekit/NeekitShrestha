@@ -11,5 +11,26 @@
 <source src="../SZRC0060.MP4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
+    <div>
+    <p id="viewsCount">Views: 0</p>
+</div>
+
+<script>
+    // Function to retrieve views count from local storage or set to 0 if not found
+    function getViewsCount() {
+        return localStorage.getItem('viewsCount') || 0;
+    }
+
+    // Function to increment views count and update it on the page
+    function incrementViewsCount() {
+        var viewsCount = parseInt(getViewsCount());
+        viewsCount++;
+        localStorage.setItem('viewsCount', viewsCount);
+        document.getElementById('viewsCount').textContent = 'Views: ' + viewsCount;
+    }
+
+    // Call incrementViewsCount when the page loads
+    window.onload = incrementViewsCount;
+</script>
 </body>
 </html>
