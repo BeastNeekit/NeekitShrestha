@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch Video</title>
+    <link rel="icon" href=".././icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <video autoplay muted loop class="video-bg">
-<source src="../SZRC0060.MP4" type="video/mp4">
-Your browser does not support the video tag.
+    <source src="../SZRC0060.MP4" type="video/mp4">
+    Your browser does not support the video tag.
 </video>
-    <div>
-    <p class="viewsCount" id="viewsCount">Views: 0</p>
+
+<div>
+    <p id="viewsCount">Views: 0</p>
 </div>
 
 <script>
     // Function to retrieve views count from local storage or set to 0 if not found
     function getViewsCount() {
-        return localStorage.getItem('viewsCount') || 789;
+        return localStorage.getItem('viewsCount') || 0;
     }
 
     // Function to increment views count and update it on the page
