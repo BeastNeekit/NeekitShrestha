@@ -519,9 +519,29 @@
                     </div>
                 </div>
                 <div class="right-contact">
-
-                    <div class="visme_d" data-title="Simple Contact Form" data-url="dm07x6o1-simple-contact-form" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="50898" ></div>
-
+                    <h1>CONTACT FORM</h1>
+                    <form id="contact-form" action="https://formspree.io/f/mqkryajr" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send</span>
+                            <span class="btn-icon"><i class="fas fa-envelope"></i></span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -599,6 +619,5 @@
 
 
 </script>
-<script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
 </body>
 </html>
