@@ -1048,3 +1048,26 @@ textarea {
 }
 
 
+.qr-code {
+  text-align: center;
+  margin-top: 50px;
+}
+.qr-code img {
+  max-width: 300px;
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+  height: auto;
+
+}
+.qr-code img.fade-out {
+  opacity: 0;
+}
+.qr-code img.fade-in {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .blogs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
