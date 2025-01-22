@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Hover with Popup Image</title>
+    <link rel="stylesheet" href="./css/styles_card.css"/>
+</head>
+<body>
+<div class="pin-container">
+    <div class="pin-box">
+        <div class="content">Neekit Shrestha
+            <div class="text-base">MYSELF NEEKIT SHRESTHA. GET HERE.</div>
+        </div>
+        <div class="flexible-rounded-gradient"></div>
+        <div class="pin-animation">
+            <img src="./images/Neekit.jpg" class="popup-image" alt="Neekit's Image">
+        </div>
+    </div>
+    <div class="skyblue-line-popup">
+        <span class="popup-text">/neek.sth.123 <a href="https://www.facebook.com/messages/t/neek.sth.123">Hire Me</a></span>
+        <div class="additional-info">
+            <p><b>Email:</b><a href="mailto:neek.sv.np@gmail.com">neek.sv.np@gmail.com</a></p>
+            <p><b>Phone:</b> +977-9761770434</p>
+            <p><b>Location:</b> Chautara, Sindhupalchok, Nepal</p>
+        </div>
+        <div class="skyblue-line"></div>
+    </div>
+</div>
+
+<script>
+    const pinContainer = document.querySelector('.pin-container');
+    const pinBox = document.querySelector('.pin-box');
+    const skyblueLinePopup = document.querySelector('.skyblue-line-popup');
+
+    pinContainer.addEventListener('mouseenter', () => {
+        pinBox.style.transform = 'translate(-50%, -50%) rotateX(40deg) scale(0.8)';
+        skyblueLinePopup.classList.add('show');
+    });
+
+    pinContainer.addEventListener('mouseleave', () => {
+        pinBox.style.transform = 'translate(-50%, -50%) rotateX(0deg) scale(1)';
+        skyblueLinePopup.classList.remove('show');
+    });
+</script>
+</body>
+</html>
