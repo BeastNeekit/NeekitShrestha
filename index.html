@@ -3,8 +3,9 @@
 <head>
 
     <title>Susan Shrestha || Beast</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./icon/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -14,6 +15,7 @@
         <div class="left-header">
             <div class="h-shape"></div>
             <div class="h-right-shape"></div>
+
             <div class="image">
                 <img src="images/gallery/hero.jpg" alt="Neekit"  >
             </div>
@@ -581,21 +583,63 @@
     <div class="control" data-id="contact">
         <i class="fas fa-envelope-open"></i>
     </div>
-    <div>
-        <a href="./components/gallery.html">Watch</a>
+    <a href="./components/gallery.html">
+    <div class="control">
+        <i class="fas fa-image"></i>
     </div>
-    <div>
-        <a href="components/watch.html">Play!</a>
-    </div>
+    </a>
+    <a href="components/watch.html">
+    <div class="control">
+        <i class="fas fa-play"></i>
+    </div></a>
     <div>
         <a href="upload/upload.html">See</a>
     </div>
-
-
 </div>
+<nav class="nav">
+    <input id="menu" type="checkbox">
+    <label for="menu"></label>
+    <ul class="menu">
+        <li>
+            <div class="control active-btn" data-id="contact" >
+                <a>
+                    <span>CONTACT</span>
+                    <i class="fas fa-envelope-open" aria-hidden="true"></i>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="control active-btn" data-id="about" >
+                <a>
+                    <span>ABOUT</span>
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="control active-btn" data-id="portfolio" >
+                <a>
+                    <span>FRIENDS</span>
+                    <i class="fas fa-briefcase" aria-hidden="true"></i>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="control active-btn" data-id="blogs" >
+                <a>
+                    <span>WORKS</span>
+                    <i class="fas fa-newspaper" aria-hidden="true"></i>
+                </a>
+            </div>
+        </li>
+    </ul>
+</nav>
 <div class="theme-btn">
     <i class="fas fa-adjust"></i>
 </div>
-<script src="./app.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 </body>
 </html>
